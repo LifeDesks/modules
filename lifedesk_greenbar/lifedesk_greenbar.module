@@ -119,20 +119,6 @@ function _lifedesk_greenbar_getbar() {
 
   $output .= '<div id="lifedesk-greenbar-meta" class="lifedesk-greenbar">';
 
-  if($user->uid == 0 ) {
-    $links[] = array(
-      'class' => 'lifedesk-greenbar-create',
-      'title' => t('Create a LifeDesk'),
-      'link' => 'http://www.' . $domain . '/create',
-      'options' => array('absolute' => TRUE, 'html' => true),
-    );	
-  }
-  $links[] = array(
-    'class' => 'lifedesk-greenbar-new',
-    'title' => t('What\'s New'),
-    'link' => 'http://www.' . $domain . '/newfeatures',
-    'options' => array('absolute' => TRUE, 'html' => TRUE)
-  );
   $links[] = array(
     'class' => 'lifedesk-greenbar-help',
     'title' => t('Help'),
